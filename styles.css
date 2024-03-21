@@ -1,0 +1,57 @@
+.body {
+    font-family: Arial, sans-serif;
+    background-color: lightblue;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.bordered-image {
+    border: 2px solid green;
+    width: 500px;
+    height: 500px;
+  }
+  
+  form {
+    margin-top: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  input[type="number"],
+  input[type="password"],
+  select {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+  }
+  
+  fieldset {
+    margin-bottom: 10px;
+  }
+  
+  button,
+  input[type="submit"] {
+    padding: 8px 15px;
+    background-color: lawngreen;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button[type="button"] {
+    background-color: red;
+  }
+  
+  button,
+  input[type="submit"] {
+    margin-right: 10px;
+  }
+  

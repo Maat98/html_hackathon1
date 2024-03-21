@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hackathon one </title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1 style="color: blue; font-size: 50px;">Student Registration Form</h1>
+    <br>
+    <p style="color: red; font-size: 40px;">Students Daily Registration Form</p>
+    <br>
+    <a href="https://www.example.com" target="_blank">More Resources from an External site</a>
+  </header>
+  <br>
+  <section>
+    <img src="images/birds.jpeg" alt="Birds Flying" class="bordered-image">
+  </section>
+  <br>
+
+  <section>
+    <form action="#" method="POST">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required><br>
+      <br>
+
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" required><br>
+      <br>
+
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" required><br>
+      <br>
+
+      <label for="age">Age:</label>
+      <input type="number" id="age" name="age" required><br>
+      <br>
+
+      <fieldset>
+        <legend>Gender:</legend>
+        <label><input type="radio" name="gender" value="male"> Male</label>
+        <label><input type="radio" name="gender" value="female"> Female</label>
+        <label><input type="radio" name="gender" value="other"> Other</label>
+      </fieldset>
+      <br>
+
+      <label for="subjects">Subjects:</label>
+      <select id="subjects" name="subjects" multiple>
+        <option value="English">English</option>
+        <option value="Math">Math</option>
+        <option value="Science">Science</option>
+        <option value="Art and Craft">Art and Craft</option>
+        <option value="Agriculture">Agriculture</option>
+        <option value="Geography">Geography</option>
+        <option value="History">History</option>
+      </select>
+      <br>
+      <br>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required>
+      <br>
+
+      <input type="hidden" id="sessionId" name="sessionId" value="some_session_id">
+      <br>
+
+      <button type="button" onclick="clearForm()">Cancel</button>
+      <br>
+      <br>
+      <input type="submit" value="Register">
+    </form>
+  </section>
+
+  <script>
+    function clearForm() {
+      document.getElementById("name").value = "";
+      document.getElementById("email").value = "";
+      document.getElementById("phone").value = "";
+      document.getElementById("age").value = "";
+      document.getElementById("password").value = "";
+    }
+  </script>
+</body>
+</html>
